@@ -1,0 +1,20 @@
+<header role="banner" class="header-page--user--login">
+  <div class="site_branding">
+    {{ page.header }}
+  </div>
+      
+  <div class="primary_menu">
+    {% if page.primary_menu %}
+      {{page.primary_menu }}
+    {% endif %}
+  </div>
+</header>
+
+  <div id="login-container">
+      <div id="login">
+         {{ page.content }}
+      </div>
+  </div>
+
+
+{% include directory ~ '/partials/footer.html.twig' %}

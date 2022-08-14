@@ -1,0 +1,26 @@
+<div class="layout-container">
+
+{% include directory ~ '/partials/header.html.twig' %}
+
+<div class="container-one">
+  <div class="sidebar_first">
+      {% if page.sidebar_first %}
+                {{ page.sidebar_first }}
+      {% endif %}
+  </div>
+
+      <div class="content">
+        <main role="main">
+            <a id="main-content" tabindex="-1"></a>{# link is in html.html.twig #}
+
+            <div class="layout-content">
+               {{kint(content.field_ingredient)}}
+              {{ page.content }}
+            </div>{# /.layout-content #}
+        </main>
+      </div>
+</div>
+
+{% include directory ~ '/partials/footer.html.twig' %}
+  
+</div>{# /.layout-container #}

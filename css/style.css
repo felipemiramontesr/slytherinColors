@@ -1,0 +1,206 @@
+body {
+  position: relative;
+  font-family: "Roboto", sans-serif;
+  background-color: #ffffff;
+}
+
+.box, .header-page--user--login, .footer, .header {
+  background-color: #1a472a;
+  padding: 10px 10px;
+}
+
+.block-inline-menu li, .node .links li, .footer .footer_first li, .container-one .content .node--view--frontpage .links li, .header .primary_menu li {
+  display: inline;
+  padding: 0 10px 0 0;
+}
+.block-inline-menu a, .node .links a, .footer .footer_first a, .container-one .content .node--view--frontpage .links a, .header .primary_menu a {
+  text-decoration: none;
+  display: inline-block;
+  width: 150px;
+  padding: 10px 0;
+  background-color: #aaaaaa;
+  color: #ffffff;
+  font-weight: bold;
+  text-align: center;
+}
+.block-inline-menu a:hover, .node .links a:hover, .footer .footer_first a:hover, .container-one .content .node--view--frontpage .links a:hover, .header .primary_menu a:hover {
+  background-color: #5d5d5d;
+}
+
+.block-menu a, .container-one .sidebar_first a {
+  text-decoration: none;
+  display: block;
+  width: 150px;
+  margin: 10px;
+  padding: 10px 0;
+  background-color: #aaaaaa;
+  color: #ffffff;
+  font-weight: bold;
+  text-align: center;
+}
+.block-menu a:hover, .container-one .sidebar_first a:hover {
+  background-color: #5d5d5d;
+}
+
+.href a, .header-page--user--login .primary_menu li a, .node .field--node--field-tags div a, .footer .footer_second .footer_second_right a, .footer .footer_second .footer_second_left a, .container-one .content .node--view--frontpage .field--node--field-tags div a {
+  text-decoration: none;
+  padding: 10px 20px;
+  background-color: #aaaaaa;
+  color: #ffffff;
+  font-weight: bold;
+  text-align: center;
+}
+.href a:hover, .header-page--user--login .primary_menu li a:hover, .node .field--node--field-tags div a:hover, .footer .footer_second .footer_second_right a:hover, .footer .footer_second .footer_second_left a:hover, .container-one .content .node--view--frontpage .field--node--field-tags div a:hover {
+  background-color: #5d5d5d;
+}
+
+.form label, #login-container #login label, .node label {
+  display: block;
+}
+.form input[type=submit], #login-container #login input[type=submit], .node input[type=submit] {
+  border: 1px solid #cccccc;
+  text-align: center;
+  margin-top: 10px;
+  margin-bottom: 5px;
+  width: 150px;
+  padding: 10px 0px;
+  background-color: #aaaaaa;
+  color: #ffffff;
+  font-weight: bold;
+}
+.form input[type=submit]:hover, #login-container #login input[type=submit]:hover, .node input[type=submit]:hover {
+  background-color: #5d5d5d;
+}
+.form input[type=text], #login-container #login input[type=text], .node input[type=text] {
+  display: block;
+  padding: 10px 5px;
+  border: 1px solid #cccccc;
+  margin-top: 10px;
+  margin-bottom: 5px;
+  width: 400px;
+  background-color: #dcdfde;
+  color: #000000;
+  font-weight: bold;
+}
+.form input[type=password], #login-container #login input[type=password], .node input[type=password] {
+  display: block;
+  padding: 10px 5px;
+  border: 1px solid #cccccc;
+  margin-top: 10px;
+  margin-bottom: 5px;
+  width: 400px;
+  background-color: #dcdfde;
+  color: #000000;
+  font-weight: bold;
+}
+
+.header {
+  padding: 0 0 40px 0;
+}
+.header div {
+  display: inline-block;
+}
+.header .site_branding {
+  padding: 20px 0 0 70px;
+}
+.header .primary_menu {
+  float: right;
+}
+
+.container-one {
+  display: flex;
+  margin: 10px;
+}
+.container-one .sidebar_first {
+  width: 33%;
+  background-color: #dcdfde;
+  margin: 10px 5px 10px 10px;
+}
+.container-one .sidebar_first li {
+  list-style-type: none;
+}
+.container-one .content {
+  background-color: #dcdfde;
+  margin: 10px 10px 10px 5px;
+  padding: 0px 20px;
+}
+.container-one .content .node--view--frontpage {
+  border: 1px solid #cccccc;
+  padding: 0 20px;
+  margin-bottom: 20px;
+}
+.container-one .content .node--view--frontpage a {
+  color: #000000;
+  text-decoration: none;
+}
+.container-one .content .node--view--frontpage a:hover {
+  color: #5d5d5d;
+}
+.container-one .content .node--view--frontpage .field--node--field-tags div {
+  display: inline-block;
+}
+.footer .footer_second div {
+  display: inline-block;
+}
+.footer .footer_second .footer_second_left {
+  padding: 0 0 0 50px;
+}
+.footer .footer_second .footer_second_right {
+  padding: 15px 50px 0 0;
+  float: right;
+}
+
+.node {
+  text-align: justify;
+  padding: 0 50px 50px 50px;
+}
+.node a {
+  color: #000000;
+  text-decoration: none;
+}
+.node a:hover {
+  color: #5d5d5d;
+}
+.node .field--node--field-tags div {
+  display: inline-block;
+}
+.node .links a:hover {
+  color: #ffffff;
+}
+
+.header-page--user--login {
+  padding: 0 0 40px 0;
+}
+.header-page--user--login div {
+  display: inline-block;
+}
+.header-page--user--login .site_branding {
+  padding: 20px 0 0 70px;
+}
+.header-page--user--login .primary_menu {
+  float: right;
+  padding: 15px 50px 0 0;
+}
+.header-page--user--login .primary_menu li {
+  display: inline;
+}
+
+#login-container {
+  background-color: #dcdfde;
+  width: 100%;
+  height: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 0 70px 0;
+}
+#login-container #login {
+  border: 1px solid #cccccc;
+  padding: 0px 20px 20px 20px;
+}
+
+.paragraph--ingredient div {
+  display: inline-block;
+}
+
+/*# sourceMappingURL=style.css.map */

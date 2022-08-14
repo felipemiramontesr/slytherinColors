@@ -1,0 +1,21 @@
+<div class="footer">
+  <div class="footer_first">
+      {% if page.footer_first %}
+          <footer role="contentinfo">
+              {{ page.footer_first }}
+          </footer>
+     {% endif %}
+  </div>
+  <div class="footer_second">
+    <div class="footer_second_left">
+       <p> All Rights Reserved. <a href="mailto:felipemiramontesr@gmail.com">Mail me bitch</a></p>
+    </div>
+    <div class="footer_second_right">
+        {% if page.footer_second %}
+            <footer role="contentinfo">
+                {{ page.footer_second }}
+            </footer>
+        {% endif %}
+    </div>       
+  </div>
+</div>

@@ -1,0 +1,283 @@
+@import "colors";
+
+body{
+	position: relative;
+	font-family: "Roboto", sans-serif; 
+	background-color: $white;
+}
+
+.box{
+	background-color: $banner_bg_one;
+	padding: 10px 10px;
+}
+
+.block-inline-menu{
+
+	li{
+		display: inline;
+		padding: 0 10px 0 0;
+	}
+
+	a{
+		text-decoration: none;
+		display: inline-block;
+		width: 150px;
+		padding: 10px 0;
+		background-color: $href_bg;
+		color: $white;
+		font-weight: bold;
+		text-align: center;
+	}
+
+		a:hover{
+			background-color: $href_hover;
+		}
+}
+
+
+.block-menu{
+
+	a{
+		text-decoration: none;
+		display:block;
+		width: 150px;
+		margin: 10px;
+		padding: 10px 0;
+		background-color: $href_bg;
+		color: $white;
+		font-weight: bold;
+		text-align: center;
+	}
+
+		a:hover{
+			background-color: $href_hover;
+		}
+}
+
+.href{
+	a{
+		text-decoration: none;
+		padding: 10px 20px;
+		background-color: $href_bg;
+		color: $white;
+		font-weight: bold;
+		text-align: center;
+	}
+
+		a:hover{
+			background-color: $href_hover;
+		}
+}
+
+.form{
+	label {
+		display: block
+	}
+
+	input[type=submit]{
+		border: 1px solid $border_line;
+		text-align: center;
+		margin-top: 10px;
+		margin-bottom: 5px;
+		width: 150px;
+		padding: 10px 0px;
+		background-color: $href_bg;
+		color: $white;
+		font-weight: bold;
+	}
+
+	input[type=submit]:hover{
+		background-color: $href_hover;
+	}
+
+	input[type=text]{
+		display: block;
+		padding: 10px 5px;
+		border: 1px solid #cccccc;
+		margin-top: 10px;
+		margin-bottom: 5px;
+		width: 400px;
+		background-color: $banner_bg_three;
+		color: $black;
+		font-weight: bold;
+	}		
+			
+	input[type=password]{
+		display: block;
+		padding: 10px 5px;
+		border: 1px solid #cccccc;
+		margin-top: 10px;
+		margin-bottom: 5px;
+		width: 400px;
+		background-color: $banner_bg_three;
+		color: $black;
+		font-weight: bold;
+	}
+}
+
+.header{
+	@extend .box;
+	padding: 0 0 40px 0;
+
+	div{
+		display: inline-block;
+	}
+
+	.site_branding{
+		padding: 20px 0 0 70px;
+	}
+
+	.primary_menu{
+		@extend .block-inline-menu;
+		float: right;	
+	}
+
+}
+
+.container-one{
+	display: flex;
+	margin: 10px;
+
+	.sidebar_first{
+		@extend .block-menu;
+		width: 33%;
+		background-color: $banner_bg_three;
+		margin: 10px 5px 10px 10px;
+
+		li{
+			list-style-type:none;
+		}
+	}
+
+	.content{
+		background-color: $banner_bg_three;
+		margin: 10px 10px 10px 5px;
+		padding: 0px 20px;
+
+		.node--view--frontpage{
+			 border: 1px solid $border_line;
+			 padding: 0 20px;
+			 margin-bottom: 20px;
+
+			a{
+			 		color:$black;
+			 		text-decoration: none;
+			}
+
+			a:hover{
+				color: $href_hover;
+			}
+
+			.field--node--field-tags{
+			 	div{
+			 		@extend .href;
+			 		display: inline-block;
+			 	}
+			}
+
+			.links{
+				@extend .block-inline-menu;
+			}
+		}
+	}
+}
+
+.footer{
+	@extend .box;
+
+	.footer_first{
+		@extend .block-inline-menu;
+	}
+
+	.footer_second{
+
+		div{
+			display: inline-block;
+		}
+
+		.footer_second_left{
+			@extend .href;
+			padding: 0 0 0 50px;
+		}
+
+		.footer_second_right{
+			@extend .href;
+			padding: 15px 50px 0 0;
+			float: right;
+		}
+	}
+}
+
+.node{
+	@extend .form;
+	text-align: justify;
+	padding: 0 50px 50px 50px;
+
+	a{
+		color:$black;
+		text-decoration: none;
+	}
+
+		a:hover{
+			color: $href_hover;
+		}
+
+	.field--node--field-tags{
+			 	div{
+			 		@extend .href;
+			 		display: inline-block;
+			 	}
+	}
+
+			.links{
+				@extend .block-inline-menu;
+
+				a:hover{
+						color: $white;
+				}
+			}
+}
+
+
+.header-page--user--login{
+	@extend .box;
+	padding: 0 0 40px 0;
+
+	div{
+		display: inline-block;
+	}
+
+	.site_branding{
+		padding: 20px 0 0 70px;
+	}
+
+	.primary_menu{
+		float: right;
+		padding: 15px 50px 0 0;
+
+		li{
+			@extend .href;
+			display: inline;
+		}	
+	}
+}
+
+#login-container{
+	background-color: $banner_bg_three;
+	width: 100%;
+	height: 400px;
+	display: flex;
+  	justify-content: center;
+  	align-items: center;
+  	padding: 0 0 70px 0;  
+
+  	#login{
+		@extend .form;
+		border: 1px solid $border_line;
+		padding: 0px 20px 20px 20px;
+	}
+}
+
+.paragraph--ingredient div{
+	display: inline-block;
+}
